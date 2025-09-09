@@ -26,22 +26,46 @@
 <body class="min-h-screen flex flex-col bg-[#F0FDF4]">
     <!-- Navbar -->
     <header class="border-b bg-green-700 text-white sticky top-0 z-40">
-        <nav class="navbar container mx-auto px-4">
-            <div class="flex-1">
+        <nav class="relative container mx-auto px-4 flex items-center justify-between h-16">
+
+            <!-- Left Logo -->
+            <div class="flex items-center">
                 <a class="text-xl font-extrabold tracking-tight">Green Earth</a>
             </div>
-            <div class="flex-1 hidden md:flex justify-center">
+
+            <!-- Center Menu -->
+            <div class="hidden md:flex absolute left-1/2 transform -translate-x-1/2">
                 <ul class="menu menu-horizontal px-1 text-white">
                     <li><a href="#about">About</a></li>
-                    <li><a href="#about">Gallery</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
                     <li><a href="#plant">Plant a Tree</a></li>
                 </ul>
             </div>
-            <div class="flex-1 flex justify-end">
+
+            <!-- Right Button -->
+            <div class="hidden md:flex">
                 <a href="#plant" class="btn btn-warning text-black">Plant a Tree</a>
             </div>
+
+            <!-- Mobile Menu -->
+            <div class="md:hidden flex">
+                <div class="dropdown dropdown-end">
+                    <div tabindex="0" role="button" class="btn btn-ghost text-white">☰</div>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-green-700 rounded-box w-40 text-white">
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#plant">Plant a Tree</a></li>
+                        <li class="mt-2">
+                            <a href="#plant" class="btn btn-warning text-black w-full">Donate</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
         </nav>
     </header>
+
 
     <!-- Banner -->
     <section id="home" class="relative">
