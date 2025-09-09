@@ -183,32 +183,3 @@ const highlighted = highlight`The price is ${price} with ${tax * 100}% tax`;
 3. **Multi-line**: Native support for multi-line strings
 4. **Expression evaluation**: Can embed any JavaScript expression
 5. **Escaping**: Less need for escape characters
-
-## Project Structure
-
-```
-green-earth/
-├── index.html          # Main HTML file
-├── script.js          # JavaScript functionality
-├── README.md          # Project documentation
-└── [deployment files] # Generated during build
-```
-
-## Setup Instructions
-
-1. Clone the repository
-2. Open `index.html` in a web browser
-3. The website will automatically load plant data from the APIs
-4. No build process required - it's pure HTML, CSS, and JavaScript!
-
-## Contributing
-
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Test thoroughly
-5. Submit a pull request
-
-## License
-
-This project is open source and available under the MIT License.
